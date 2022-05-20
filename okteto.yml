@@ -2,7 +2,9 @@ name: sprint-1-pb-rg-pel
 image: okteto/node:14
 command: bash
 sync:
-  - .:/usr/src/app
+- .:/usr/src/app
 forward:
-  - 8080:8080
+- 9229:9229
+- 3000:3000
+- 8080:8080
 autocreate: true
